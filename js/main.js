@@ -21,9 +21,6 @@
 					item.removeClass('hidden');
 				})
 				$('waiter').addClass('hidden');
-			},
-			onFailure: function(){
-				alert('Oh no! Something went wrong...');
 			}
 		}).send();
 		
