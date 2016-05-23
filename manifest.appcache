@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 20160523 32094ic2j09ric
+# 20160523 436sr79yb08n0n
 
 # Don't touch these
 css/main.css
@@ -22,10 +22,6 @@ conf/simbolo_movimento.png
 NETWORK:
 # Don't touch this
 conf/conf.json
-
-# Icons: add your icons paths
-conf/f7o-512.png
-conf/simbolo_movimento.png
 
 # Fallback content
 FALLBACK:
