@@ -8,7 +8,7 @@
 		
 		// Contents are in conf object
 		new Request.JSON({
-			url: 'conf/conf.json',
+			url: './conf/conf.json',
 			onSuccess: function(json){
 				json.each(function(item){
 					// Populate collection
