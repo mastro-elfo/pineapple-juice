@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 20160523 436sr79yb08n0n
+# 20160524 309ur908un0f9uis0d9if0s9di
 
 # Don't touch these
 css/main.css
@@ -7,7 +7,7 @@ css/style.css
 js/main.js
 js/mvc.js
 lib/epitome-min.js
-lib/mootools-core-1.4.5-full-compat.js
+lib/mootools-core-1.4.5-full-compat-min.js
 media/icon.128.png
 index.html
 
