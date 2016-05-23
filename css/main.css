@@ -1,0 +1,116 @@
+
+.hidden {
+	display: none;
+}
+
+html, body {
+  margin: 0;
+  overflow: hidden;
+}
+
+/* menu */
+#menu {
+	position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#menu > div {
+  cursor: pointer;
+  padding: 0.3em 0.6em;
+}
+
+#menu .container {
+	position: relative;
+  height: 3em;
+}
+
+#menu  .container > img {
+	display: block;
+  float: left;
+  width: 1em;
+  height: 1em;
+  font-size: 3em;
+  text-align: center;
+  line-height: 1em;
+  overflow: hidden;
+  margin-right: 0.3em
+}
+#menu  .container > .name {
+  font-size: 1.5em;
+}
+#menu .container > .description {
+	font-size: 75%;
+}
+#menu .container > .name,
+#menu .container > .description {
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* maincontainer */
+
+#maincontainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all ease 0.25s;
+  background-color: white;
+}
+
+#maincontainer.open {
+  transform: translateX(80%);
+}
+
+#maincontainer > header {
+  font-size: 2em;
+	height: 2em;
+  line-height: 2em;
+}
+
+#maincontainer #toggle-menu {
+  display: block;
+  width: 2em;
+  height: 2em;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  float: left;
+}
+#maincontainer.open #toggle-menu:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+#page-title {
+	text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* iframe */
+#maincontainer iframe {
+	border: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  height: calc(100% - 4em);
+}
+
+#waiter.hidden {
+  display: none;
+}

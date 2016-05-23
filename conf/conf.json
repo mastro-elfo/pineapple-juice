@@ -1,0 +1,153 @@
+[
+	{
+		"name": "Home M-E",
+		"description": "Una home page qualsiasi",
+		"icon": "conf/f7o-512.png",
+		"icon-alt": "F7O",
+		"title": "Home page di mastro-elfo",
+		"src": "http://mastro-elfo.github.io",
+		"selected": true,
+		"header-background": "#3a3a3a",
+		"header-color": "#eee"
+	},
+	{
+		"name": "W3Schools",
+		"description": "Learn with us!",
+		"icon": "",
+		"icon-alt": "W3S",
+		"title": "",
+		"src": "http://www.w3schools.com/",
+		"header-background": "#4CAF50",
+		"header-color": "#eee"
+	},
+	{
+		"name": "Movimento 5 Stelle",
+		"description": "<span style=color:#EED924;>&bigstar;&bigstar;&bigstar;&bigstar;&bigstar;</span> Non riceve alcun finanziamento pubblico",
+		"icon": "conf/simbolo_movimento.png",
+		"icon-alt": "M5S",
+		"title": "Il Movimento 5 Stelle non riceve alcun finanziamento pubblico",
+		"src": "http://www.beppegrillo.it/movimento/",
+		"header-background": "#EED924",
+		"header-color": "#222"
+	},
+	{
+		"name": "<span style=font-style:italic;font-weight:bold;color:red>Titles <sup>accept</sup> <span style=font-variant:small-caps>html</span></span>",
+		"description": "",
+		"icon": "",
+		"icon-alt": "",
+		"title": "",
+		"src": "http://none.com",
+		"header-background": "",
+		"header-color": ""
+	},
+	{
+		"name": "Also descriptions accept html",
+		"description": "<span style=font-variant:small-caps>HTML</span> <span style=text-decoration:underline>styled</span> <span style=color:yellowgreen>description</span>",
+		"icon": "",
+		"icon-alt": "",
+		"title": "",
+		"src": "http://none.com",
+		"header-background": "",
+		"header-color": ""
+	},
+	{
+		"name": "Header bar <span style=font-style:italic;color:yellow>fg</span> &amp; <span style=font-style:italic;color:purple>bg</span> color",
+		"description": "Click me please!",
+		"icon": "",
+		"icon-alt": "",
+		"title": "",
+		"src": "http://none.com",
+		"header-background": "purple",
+		"header-color": "yellow"
+	},
+	{
+		"name": "Add a beautiful icon",
+		"description": "To each menu item",
+		"icon": "media/icon.128.png",
+		"icon-alt": "H",
+		"title": "",
+		"src": "http://none.com",
+		"header-background": "",
+		"header-color": ""
+	},
+	{
+		"name": "Or use alt attribute",
+		"description": "<code>&amp;#128444;</code> in this case",
+		"icon": "",
+		"icon-alt": "&#128444;",
+		"title": "",
+		"src": "http://none.com",
+		"header-background": "",
+		"header-color": ""
+	},
+	{
+		"name": "This title is very long. We can't handle it so we decided to truncate at a certain point. We apologise for any inconvenient this may cause!",
+		"description": "Do you really need a so long description or title? Also this description is very long and for the same reason it is better to truncate at a certain point. As before we apologise for any inconvenient this may cause.",
+		"icon": "",
+		"icon-alt": "",
+		"title": "",
+		"src": "http://none.com",
+		"header-background": "",
+		"header-color": ""
+	},
+	{
+		"name": "<span style=color:red>Warning!</span>",
+		"description": "Some sites don't like to be wrapped inside an <code>iframe</code>",
+		"icon": "",
+		"icon-alt": "!!!",
+		"title": "",
+		"src": "http://none.com",
+		"header-background": "",
+		"header-color": ""
+	},
+	{
+		"name": "Test4",
+		"description": "",
+		"icon": "",
+		"icon-alt": "",
+		"title": "",
+		"src": "http://none.com",
+		"header-background": "",
+		"header-color": ""
+	},
+	{
+		"name": "Test1",
+		"description": "",
+		"icon": "",
+		"icon-alt": "",
+		"title": "",
+		"src": "http://none.com",
+		"header-background": "",
+		"header-color": ""
+	},
+	{
+		"name": "Test2",
+		"description": "",
+		"icon": "",
+		"icon-alt": "",
+		"title": "",
+		"src": "http://none.com",
+		"header-background": "",
+		"header-color": ""
+	},
+	{
+		"name": "Test3",
+		"description": "",
+		"icon": "",
+		"icon-alt": "",
+		"title": "",
+		"src": "http://none.com",
+		"header-background": "",
+		"header-color": ""
+	},
+	{
+		"name": "Test4",
+		"description": "",
+		"icon": "",
+		"icon-alt": "",
+		"title": "",
+		"src": "http://none.com",
+		"header-background": "",
+		"header-color": ""
+	}
+]

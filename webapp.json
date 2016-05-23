@@ -1,0 +1,13 @@
+{
+	"short_name": "Home Page",
+	"name": "Home Page",
+	"icons": [
+		{
+			"src": "media/icon.128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		}
+	],
+	"start_url": "index.html",
+	"display": "standalone"
+}

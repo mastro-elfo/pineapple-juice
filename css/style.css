@@ -1,0 +1,66 @@
+
+body {
+  font-family: arial, sans-serif;
+}
+
+#menu {
+  background-color: #444;
+  color: #eee;
+}
+
+#menu > div {
+  transition: all ease 0.25s;
+  border-bottom: 1px solid;
+}
+
+#menu > div:hover {
+  background-color: #0080ff;
+}
+
+#menu > div:last-child {
+  border: none;
+}
+
+#menu .container img {}
+
+#maincontainer {
+  box-shadow: 0 0 1em;
+}
+
+#maincontainer > header {
+  background-color: #ee8f4d;
+  color: white;
+}
+
+#toggle-menu {
+  transition: all ease 0.25s;
+}
+#toggle-menu:hover {
+  background-color: #0080ff;
+}
+
+#waiter {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size: 5rem;
+  display: block;
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  margin-top: -2em;
+  margin-left: -2em;
+  animation: waiter 2s linear infinite;
+}
+
+@keyframes waiter {
+  0% {
+    color: #000;
+  }
+  50% {
+    color: #666;
+  }
+  100% {
+    color: #000;
+  }
+}
