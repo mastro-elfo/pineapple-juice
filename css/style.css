@@ -35,7 +35,7 @@ body {
 #toggle-menu {
   transition: all ease 0.25s;
 }
-#toggle-menu:hover {
+#toggle-menu:active {
   background-color: #0080ff;
 }
 
