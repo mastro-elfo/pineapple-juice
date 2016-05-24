@@ -8,7 +8,7 @@
 		
 		// Contents are in conf object
 		new Request.JSON({
-			url: './conf/conf.json',
+			url: 'conf/conf.json',
 			method: 'GET',
 			onSuccess: function(json){
 				json.each(function(item){
@@ -21,6 +21,15 @@
 					item.removeClass('hidden');
 				})
 				$('waiter').addClass('hidden');
+			},
+			onError: function(text, error) {
+				console.log(text+' '+error);
+			},
+			onFailure: function(xhr){
+				console.log('Request failed!');
+			},
+			onException: function(headerName, value){
+				console.log('Exception: '+headerName+' = '+value);
 			}
 		}).send();
 		
