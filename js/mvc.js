@@ -13,7 +13,8 @@
 				'src': 'http://mastro-elfo.github.io',
 				'language': 'it-IT',
 				
-				'selected': false
+				'selected': false,
+				'last-selection': 0
 			},
 			
 			'onChange:selected': function(value){
@@ -60,7 +61,11 @@
 			},
 			onSelect: function(event){
 				event && event.stop && event.stop();
-				this.model.set('selected', true);
+				//this.model.set('selected', true);
+				this.model.set({
+					'selected': true,
+					'last-selection': +new Date()
+				});
 			},
 			onReady: function(){
 				this.render();
@@ -112,7 +117,7 @@
 			}
 		},
 		render: function(){
-			if(this.model.get('selected')) {
+			if(this.model.get('selected') && (this.element.get('src') != this.model.get('src'))) {
 				this.element.set('src', this.model.get('src'));
 			}
 		}

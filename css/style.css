@@ -10,6 +10,7 @@ body {
 
 #menu > div {
   transition: all ease 0.25s;
+  -webkit-transition: all ease 0.25s;
   border-bottom: 1px solid;
 }
 
@@ -34,6 +35,7 @@ body {
 
 #toggle-menu {
   transition: all ease 0.25s;
+  -webkit-transition: all ease 0.25s;
 }
 #toggle-menu:active {
   background-color: #0080ff;
@@ -51,6 +53,7 @@ body {
   margin-top: -2em;
   margin-left: -2em;
   animation: waiter 2s linear infinite;
+  -webkit-animation: waiter 2s linear infinite;
 }
 
 @keyframes waiter {
