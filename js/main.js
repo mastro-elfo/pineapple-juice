@@ -6,30 +6,34 @@
 		// Create the collection obj
 		var collection = new window.Collection();
 		
+		console && console.info && console.info('Send request to get ./conf/conf.json');
 		// Contents are in conf object
 		new Request.JSON({
-			url: 'conf/conf.json',
+			url: './conf/conf.json',
 			method: 'GET',
 			onSuccess: function(json){
+				console && console.info && console.info('Request success: '+json.length+' item[s] found');
 				json.each(function(item){
+					console && console.info && console.info('Add item: '+item.name);
 					// Populate collection
 					collection.addModel(item);
 				});
 				
-				// Display items
+				// Uncover page items
+				console && console.info && console.info('Uncover page items');
 				$$('.hidden').each(function(item){
 					item.removeClass('hidden');
 				});
 				$('waiter').addClass('hidden');
 			},
 			onError: function(text, error) {
-				console.log('Error: '+text+' '+error);
+				console && console.error && console.error('Error: '+text+' '+error);
 			},
 			onFailure: function(xhr){
-				console.log('Request failed!');
+				console && console.error && console.error('Request failed!');
 			},
 			onException: function(headerName, value){
-				console.log('Exception: '+headerName+' = '+value);
+				console && console.error && console.error('Exception: '+headerName+' = '+value);
 			}
 		}).send();
 		

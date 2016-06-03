@@ -4,46 +4,46 @@
 }
 
 html, body {
-  margin: 0;
-  padding: 0;
-  width:100%;
-  overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width:100%;
+	overflow: hidden;
 }
 
 /* menu */
 #menu {
 	position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
+	top: 0;
+	left: 0;
+	width: 80%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 #menu > div {
-  cursor: pointer;
-  padding: 0.3em 0.6em;
+	cursor: pointer;
+	padding: 0.3em 0.6em;
 }
 
 #menu .container {
 	position: relative;
-  height: 3em;
+	height: 3em;
 }
 
 #menu  .container > img {
 	display: block;
-  float: left;
-  width: 1em;
-  height: 1em;
-  font-size: 3em;
-  text-align: center;
-  line-height: 1em;
-  overflow: hidden;
-  margin-right: 0.3em
+	float: left;
+	width: 1em;
+	height: 1em;
+	font-size: 3em;
+	text-align: center;
+	line-height: 1em;
+	overflow: hidden;
+	margin-right: 0.3em
 }
 #menu  .container > .name {
-  font-size: 1.5em;
+	font-size: 1.5em;
 }
 #menu .container > .description {
 	font-size: 75%;
@@ -58,63 +58,79 @@ html, body {
 /* maincontainer */
 
 #maincontainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  -webkit-transition: all ease 0.25s;
-  transition: all ease 0.25s;
-  background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	-webkit-transition: all ease 0.25s;
+	   -moz-transition: all ease 0.25s;
+		 -o-transition: all ease 0.25s;
+			transition: all ease 0.25s;
+	background-color: white;
 }
 
 #maincontainer.open {
 	-webkit-transform: translateX(80%);
-  transform: translateX(80%);
+	   -moz-transform: translateX(80%);
+		-ms-transform: translateX(80%);
+		 -o-transform: translateX(80%);
+			transform: translateX(80%);
 }
 
 #maincontainer > header {
-  font-size: 2em;
+	font-size: 2em;
 	height: 2em;
-  line-height: 2em;
+	line-height: 2em;
 }
 
 #maincontainer #toggle-menu {
-  display: block;
-  width: 2em;
-  height: 2em;
-  overflow: hidden;
-  text-align: center;
-  cursor: pointer;
-  float: left;
+	font-size: 1.6em;
+	display: block;
+	width: 1.25em;
+	height: 1.25em;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	float: left;
 }
 #maincontainer.open #toggle-menu:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	content: "";
 }
 
 #page-title {
 	text-align: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 /* iframe */
 #maincontainer iframe {
 	border: none;
-  display: block;
-  width: 100%;
-  height: 100%;
-  height: calc(100% - 4em);
+	display: block;
+	width: 100%;
+	height: 100%;
+	height: calc(100% - 4em);
+	position: absolute;
+	top: 4em;
+	left: 0;
+	background-color: white;
 }
 
+#maincontainer iframe.selected {
+	z-index: 10;
+}
+
+/* waiter */
 #waiter.hidden {
-  display: none;
+	display: none;
 }

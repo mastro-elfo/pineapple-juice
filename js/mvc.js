@@ -46,8 +46,11 @@
 				});
 				new window.PageView({
 					model: model,
-					element: $('maincontainer').getElement('iframe')
+					element: new Element('iframe', {
+						'src': ''
+					}).inject('maincontainer')
 				});
+				
 			}
 		}
 	});
@@ -61,7 +64,6 @@
 			},
 			onSelect: function(event){
 				event && event.stop && event.stop();
-				//this.model.set('selected', true);
 				this.model.set({
 					'selected': true,
 					'last-selection': +new Date()
@@ -117,8 +119,16 @@
 			}
 		},
 		render: function(){
-			if(this.model.get('selected') && (this.element.get('src') != this.model.get('src'))) {
-				this.element.set('src', this.model.get('src'));
+			if(this.model.get('selected')) {
+				console && console.info && console.info('Display '+this.model.get('name'));
+				this.element.addClass('selected');
+				if(this.element.get('src') != this.model.get('src')){
+					console && console.info && console.info('Load '+this.model.get('src'));
+					this.element.set('src', this.model.get('src'));
+				}
+			}
+			else {
+				this.element.removeClass('selected');
 			}
 		}
 	});
