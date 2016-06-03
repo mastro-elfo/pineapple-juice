@@ -41,20 +41,40 @@
 		new Epitome.View({
 			collection: collection,
 			element: 'maincontainer',
+			onReady: function(){
+				var self = this;
+				// Add swipe event
+				new MooSwipe('toggle-menu', {
+					onSwipeLeft: function(){
+						if(self.element.hasClass('open')) {
+							console && console.info && console.info('Close menu');
+							self.element.removeClass('open');
+						}
+					},
+					onSwipeRight: function(){
+						if(!self.element.hasClass('open')) {
+							console && console.info && console.info('Open menu');
+							self.element.addClass('open');
+						}
+					}
+				});
+			},
+			'onChange:collection': function(){
+				this.element.removeClass('open');
+			},
 			events: {
 				'click:relay(#toggle-menu)': 'toggle'
 			},
 			onToggle: function(event){
 				event && event.stop && event.stop();
 				if(this.element.hasClass('open')) {
+					console && console.info && console.info('Close menu');
 					this.element.removeClass('open');
 				}
 				else {
+					console && console.info && console.info('Open menu');
 					this.element.addClass('open');
 				}
-			},
-			'onChange:collection': function(){
-				this.element.removeClass('open');
 			}
 		});
 	});

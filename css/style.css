@@ -42,8 +42,13 @@ body {
 		 -o-transition: all ease 0.25s;
 			transition: all ease 0.25s;
 }
+
 #toggle-menu:active {
     background-color: #0080ff;
+}
+
+#toggle-menu:after {
+	width: 20px;
 }
 
 #waiter {
