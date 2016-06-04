@@ -1,0 +1,15 @@
+{
+	"name": "Pineapple Juice",
+	"version": "0.0",
+	"description": "",
+	"launch_path": "/index.html",
+	"icons": {
+		"128": "/media/icon.128.png"
+	},
+	"developer": {
+		"name": "Francesco Michienzi",
+		"url": "http://mastro-elfo.github.io"
+	},
+	"default_locale": "it",
+	"type": "web"
+}
